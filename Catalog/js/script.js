@@ -15,7 +15,7 @@ let current = Math.floor(loopImagenes.length / 2); // empezar al centro
 
 loopImagenes.forEach((nombre) => {
     const img = document.createElement("img");
-    img.src = "img/" + nombre;
+    img.src = "public/" + nombre;
     img.classList.add("cover-img");
 
     img.onclick = () => {
@@ -120,7 +120,7 @@ flores.forEach(flor => {
     card.classList.add("card");
 
     card.innerHTML = `
-        <img src="img/${flor.img}">
+        <img src="public/${flor.img}">
         <div class="card-body">
             <h3>${flor.nombre}</h3>
             <p>${flor.desc}</p>
